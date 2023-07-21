@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+  <h2>Ajouter une quantité de produit</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Ajouter</button>
+  </form>
+{% endblock %}
